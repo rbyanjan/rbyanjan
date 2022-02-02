@@ -1,0 +1,30 @@
+﻿{
+  "extends": "../tsconfig.base", //this will extend base config plus below compile options
+  "compilerOptions": {
+    "removeComments": true,
+    //"outFile": "../js/app.js" //It effectively looks at all of the files that get compiled, and directs all of the output to a single file and make sure that code in that file is ordered properly.
+    //Use Module bundler
+    "module": "CommonJS",
+    //The project is configured to output commonjs modules so default resolution strategy is already Node, to make it explicit use below
+    "moduleResolution": "node"
+    //"traceResolution": true //with this option the compiler will output information about how each module import is being resolved.
+    //"baseUrl": "./modules" // All non-relative imports will now happen relative to this baseUrl
+    //this is handy when you want compiler to search for modules in different location
+    //"paths": { //works with baseUrl option to configure how particular modules map to file
+    //  "my_lib": [ "./customPath" ]
+    //},
+    //"rootDirs": [ //all of the listed directory will be combined into single directory
+    //"modules",
+    //"src",
+    //"ts/modules"
+    //]
+  },
+  //glob - let you specify which file name pattern for the compiler to match
+  //"include": [
+  //  "./**/*"
+  //]
+  //array of all the files you want compiler to compile
+  "files": [
+    "./app.ts"
+  ]
+}
