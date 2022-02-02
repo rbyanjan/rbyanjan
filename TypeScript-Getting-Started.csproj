@@ -70,7 +70,6 @@
     <TypeScriptSourceRoot />
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="js\app.js" />
     <Content Include="node_modules\%40discoveryjs\json-ext\dist\json-ext.js" />
     <Content Include="node_modules\%40discoveryjs\json-ext\dist\json-ext.min.js" />
     <Content Include="node_modules\%40discoveryjs\json-ext\src\index.js" />
@@ -4738,11 +4737,8 @@
     <Content Include="node_modules\yargs\yargs.js" />
     <Content Include="node_modules\yocto-queue\index.js" />
     <Content Include="tsconfig.base.json" />
-    <Content Include="app\tsconfig.json" />
     <Content Include="webpack.config.js" />
-    <Content Include="package.json" />
     <Content Include="package-lock.json" />
-    <Content Include="js\app.js.map" />
     <Content Include="node_modules\%40discoveryjs\json-ext\CHANGELOG.md" />
     <Content Include="node_modules\%40discoveryjs\json-ext\LICENSE" />
     <Content Include="node_modules\%40discoveryjs\json-ext\package.json" />
@@ -7133,26 +7129,11 @@
     <Content Include="node_modules\yocto-queue\license" />
     <Content Include="node_modules\yocto-queue\package.json" />
     <Content Include="node_modules\yocto-queue\readme.md" />
-    <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\united.bootstrap.min.css" />
-    <Content Include="index.html" />
-    <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="app\app.ts" />
-    <TypeScriptCompile Include="app\game.ts" />
-    <TypeScriptCompile Include="app\person.ts" />
-    <TypeScriptCompile Include="app\player.ts" />
-    <TypeScriptCompile Include="app\result.ts" />
-    <TypeScriptCompile Include="app\scoreboard.ts" />
-    <TypeScriptCompile Include="app\utility.ts" />
     <TypeScriptCompile Include="node_modules\%40types\eslint-scope\index.d.ts" />
     <TypeScriptCompile Include="node_modules\%40types\eslint\helpers.d.ts" />
     <TypeScriptCompile Include="node_modules\%40types\eslint\index.d.ts" />
@@ -7435,7 +7416,6 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="app\modules\" />
     <Folder Include="Properties\" />
   </ItemGroup>
   <PropertyGroup>
